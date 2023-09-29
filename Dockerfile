@@ -18,6 +18,6 @@ ENV PROFILE=stg
 
 WORKDIR /app
 
-EXPOSE 8080
+EXPOSE 8082
 
 ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}", "-jar", "app.jar"]
