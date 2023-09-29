@@ -12,7 +12,7 @@ FROM adoptopenjdk/openjdk11:jre-11.0.15_10-alpine
 
 RUN mkdir /app
 
-COPY --from=build /project/target/app.war /app/app.war
+COPY --from=build /project/target/app.jar /app/app.jar
 
 ENV PROFILE=dev
 
@@ -20,4 +20,4 @@ WORKDIR /app
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}", "-war", "app.war"]
+ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}", "-jar", "app.jar"]
