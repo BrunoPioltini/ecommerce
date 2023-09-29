@@ -14,7 +14,7 @@ RUN mkdir /app
 
 COPY --from=build /project/target/app.jar /app/app.jar
 
-ENV PROFILE=dev
+ENV PROFILE=stg
 
 WORKDIR /app
 
