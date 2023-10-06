@@ -1,4 +1,4 @@
-package com.github.acnaweb.ecommerce;
+package com.github.brunopioltini.ecommerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

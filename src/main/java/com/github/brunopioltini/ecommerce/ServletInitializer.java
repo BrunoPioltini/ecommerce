@@ -1,4 +1,4 @@
-package com.github.acnaweb.ecommerce;
+package com.github.brunopioltini.ecommerce;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
