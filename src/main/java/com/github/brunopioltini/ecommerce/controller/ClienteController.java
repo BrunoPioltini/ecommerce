@@ -1,5 +1,7 @@
 package com.github.brunopioltini.ecommerce.controller;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,8 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/clientes")
 public class ClienteController {
 	
-	 @GetMapping("/ping")
-	    public String ping() {
-	        return "pong";
-	    }
+	 @GetMapping
+	 public List<ClientDTO> getAll() {
+		 List<ClientDTO> result = null;
+		 return result;
+	 }
 }
